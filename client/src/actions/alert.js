@@ -3,7 +3,7 @@
 import uuid from 'uuid';
 import { SET_ALERT, REMOVE_ALERT } from './types';
 
-// dispatch - thunk middleware to able to dispatch mote than 1 action.type
+// dispatch - thunk middleware to able to dispatch more than 1 action.type
 export const setAlert = (msg, alertType, timeout = 5000) => dispatch => {
   const id = uuid.v4();
   dispatch({
